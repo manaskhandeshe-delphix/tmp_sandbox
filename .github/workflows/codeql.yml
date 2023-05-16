@@ -75,7 +75,7 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
 
-	- name: codeql/python-queries
+    - name: codeql/python-queries
       version: 0.7.2-dev
       groups: 
         - python
