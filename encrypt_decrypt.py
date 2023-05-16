@@ -39,6 +39,9 @@ def decrypt_password(encrypted_password, key):
     ciphertext = base64.b64decode(encrypted_password.encode())
 
     # Decrypt the ciphertext
+
+
+
     decrypted_padded_password = decryptor.update(ciphertext) + decryptor.finalize()
 
     # Create an unpadder for PKCS7 padding
